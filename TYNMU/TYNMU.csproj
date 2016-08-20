@@ -1,0 +1,1549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A562AEC-DCA1-4463-AF13-A7FBD3B522B7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TYNMU</RootNamespace>
+    <AssemblyName>TYNMU</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKFinder, Version=2.4.1.2663, Culture=neutral, PublicKeyToken=579e7adc719a1423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>manger\ckfinder\bin\Debug\CKFinder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="manger\About\EditInfo.aspx" />
+    <Content Include="manger\ckfinder\bin\Debug\CKFinder.dll" />
+    <Content Include="manger\ckfinder\bin\Debug\CKFinder.pdb" />
+    <Content Include="manger\ckfinder\bin\Release\CKFinder.dll" />
+    <Content Include="manger\ckfinder\changelog.txt" />
+    <Content Include="manger\ckfinder\ckfinder.html" />
+    <Content Include="manger\ckfinder\ckfinder.js" />
+    <Content Include="manger\ckfinder\ckfinder_v1.js" />
+    <Content Include="manger\ckfinder\config.ascx" />
+    <Content Include="manger\ckfinder\config.js" />
+    <Content Include="manger\ckfinder\core\connector\aspx\connector.aspx" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\bg.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\ca.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\cs.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\cy.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\da.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\de.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\el.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\en.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\eo.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\es-mx.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\es.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\et.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\fa.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\fi.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\fr.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\gu.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\he.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\hi.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\hr.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\hu.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\it.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\ja.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\lt.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\lv.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\nb.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\nl.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\nn.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\no.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\pl.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\pt-br.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\ro.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\ru.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\sk.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\sl.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\sr.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\sv.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\tr.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\vi.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\zh-cn.xml" />
+    <Content Include="manger\ckfinder\core\connector\aspx\lang\zh-tw.xml" />
+    <Content Include="manger\ckfinder\help\cs\files\001.html" />
+    <Content Include="manger\ckfinder\help\cs\files\002.html" />
+    <Content Include="manger\ckfinder\help\cs\files\003.html" />
+    <Content Include="manger\ckfinder\help\cs\files\004.html" />
+    <Content Include="manger\ckfinder\help\cs\files\005.html" />
+    <Content Include="manger\ckfinder\help\cs\files\006.html" />
+    <Content Include="manger\ckfinder\help\cs\files\007.html" />
+    <Content Include="manger\ckfinder\help\cs\files\008.html" />
+    <Content Include="manger\ckfinder\help\cs\files\009.html" />
+    <Content Include="manger\ckfinder\help\cs\files\010.html" />
+    <Content Include="manger\ckfinder\help\cs\files\011.html" />
+    <Content Include="manger\ckfinder\help\cs\files\012.html" />
+    <Content Include="manger\ckfinder\help\cs\files\013.html" />
+    <Content Include="manger\ckfinder\help\cs\files\014.html" />
+    <Content Include="manger\ckfinder\help\cs\files\015.html" />
+    <Content Include="manger\ckfinder\help\cs\files\header.html" />
+    <Content Include="manger\ckfinder\help\cs\files\license.html" />
+    <Content Include="manger\ckfinder\help\cs\files\suggestions.html" />
+    <Content Include="manger\ckfinder\help\cs\files\toc.html" />
+    <Content Include="manger\ckfinder\help\cs\index.html" />
+    <Content Include="manger\ckfinder\help\en\files\001.html" />
+    <Content Include="manger\ckfinder\help\en\files\002.html" />
+    <Content Include="manger\ckfinder\help\en\files\003.html" />
+    <Content Include="manger\ckfinder\help\en\files\004.html" />
+    <Content Include="manger\ckfinder\help\en\files\005.html" />
+    <Content Include="manger\ckfinder\help\en\files\006.html" />
+    <Content Include="manger\ckfinder\help\en\files\007.html" />
+    <Content Include="manger\ckfinder\help\en\files\008.html" />
+    <Content Include="manger\ckfinder\help\en\files\009.html" />
+    <Content Include="manger\ckfinder\help\en\files\010.html" />
+    <Content Include="manger\ckfinder\help\en\files\011.html" />
+    <Content Include="manger\ckfinder\help\en\files\012.html" />
+    <Content Include="manger\ckfinder\help\en\files\013.html" />
+    <Content Include="manger\ckfinder\help\en\files\014.html" />
+    <Content Include="manger\ckfinder\help\en\files\015.html" />
+    <Content Include="manger\ckfinder\help\en\files\header.html" />
+    <Content Include="manger\ckfinder\help\en\files\license.html" />
+    <Content Include="manger\ckfinder\help\en\files\suggestions.html" />
+    <Content Include="manger\ckfinder\help\en\files\toc.html" />
+    <Content Include="manger\ckfinder\help\en\index.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\001.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\002.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\003.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\004.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\005.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\006.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\007.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\008.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\009.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\010.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\011.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\012.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\013.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\header.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\001.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\002.gif" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\003.gif" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\004.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\005.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\006.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\007.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\008.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\009.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\010.gif" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\011.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\012.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\013.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\014.gif" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\015.gif" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\016.gif" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\017.gif" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\018.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\019.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\images\020.png" />
+    <Content Include="manger\ckfinder\help\es-mx\files\license.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\suggestions.html" />
+    <Content Include="manger\ckfinder\help\es-mx\files\toc.html" />
+    <Content Include="manger\ckfinder\help\es-mx\index.html" />
+    <Content Include="manger\ckfinder\help\es\files\001.html" />
+    <Content Include="manger\ckfinder\help\es\files\002.html" />
+    <Content Include="manger\ckfinder\help\es\files\003.html" />
+    <Content Include="manger\ckfinder\help\es\files\004.html" />
+    <Content Include="manger\ckfinder\help\es\files\005.html" />
+    <Content Include="manger\ckfinder\help\es\files\006.html" />
+    <Content Include="manger\ckfinder\help\es\files\007.html" />
+    <Content Include="manger\ckfinder\help\es\files\008.html" />
+    <Content Include="manger\ckfinder\help\es\files\009.html" />
+    <Content Include="manger\ckfinder\help\es\files\010.html" />
+    <Content Include="manger\ckfinder\help\es\files\011.html" />
+    <Content Include="manger\ckfinder\help\es\files\012.html" />
+    <Content Include="manger\ckfinder\help\es\files\013.html" />
+    <Content Include="manger\ckfinder\help\es\files\header.html" />
+    <Content Include="manger\ckfinder\help\es\files\images\001.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\002.gif" />
+    <Content Include="manger\ckfinder\help\es\files\images\003.gif" />
+    <Content Include="manger\ckfinder\help\es\files\images\004.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\005.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\006.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\007.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\008.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\009.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\010.gif" />
+    <Content Include="manger\ckfinder\help\es\files\images\011.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\012.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\013.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\014.gif" />
+    <Content Include="manger\ckfinder\help\es\files\images\015.gif" />
+    <Content Include="manger\ckfinder\help\es\files\images\016.gif" />
+    <Content Include="manger\ckfinder\help\es\files\images\017.gif" />
+    <Content Include="manger\ckfinder\help\es\files\images\018.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\019.png" />
+    <Content Include="manger\ckfinder\help\es\files\images\020.png" />
+    <Content Include="manger\ckfinder\help\es\files\license.html" />
+    <Content Include="manger\ckfinder\help\es\files\suggestions.html" />
+    <Content Include="manger\ckfinder\help\es\files\toc.html" />
+    <Content Include="manger\ckfinder\help\es\index.html" />
+    <Content Include="manger\ckfinder\help\files\images\002.gif" />
+    <Content Include="manger\ckfinder\help\files\images\003.gif" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_basket_clear.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_basket_drag.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_basket_empty.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_basket_file_menu.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_basket_remove.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_already_exists.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_copied.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_delete.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_display_01.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_display_02.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_display_03.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_display_04.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_drag_copy.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_drag_move.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_menu.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_moved.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_pane.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_rename.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_resize.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_resize_both.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_resize_new.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_resize_overwrite.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_resize_resized.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_resize_thumbnails.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_select_hovered.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_select_selected.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_select_unselected.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_view_list.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_file_view_thumbnails.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_collapse.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_copied_from_basket.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_delete.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_expand.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_loading.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_menu.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_moved_from_basket.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_new.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_pane.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_rename.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_folder_select.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_interface.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_menu_arrow.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_menu_arrows.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_resize_lock.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_resize_reset.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_resize_unlock.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_settings.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_status_empty.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_status_file.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_status_folder.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_toolbar.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_toolbar_help.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_toolbar_refresh.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_upload_01.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_upload_03.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_upload_04.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_upload_09.png" />
+    <Content Include="manger\ckfinder\help\files\images\CKFinder_upload_10.png" />
+    <Content Include="manger\ckfinder\help\files\other\help.css" />
+    <Content Include="manger\ckfinder\help\files\other\help.js" />
+    <Content Include="manger\ckfinder\help\fi\files\001.html" />
+    <Content Include="manger\ckfinder\help\fi\files\002.html" />
+    <Content Include="manger\ckfinder\help\fi\files\003.html" />
+    <Content Include="manger\ckfinder\help\fi\files\004.html" />
+    <Content Include="manger\ckfinder\help\fi\files\005.html" />
+    <Content Include="manger\ckfinder\help\fi\files\006.html" />
+    <Content Include="manger\ckfinder\help\fi\files\007.html" />
+    <Content Include="manger\ckfinder\help\fi\files\008.html" />
+    <Content Include="manger\ckfinder\help\fi\files\009.html" />
+    <Content Include="manger\ckfinder\help\fi\files\010.html" />
+    <Content Include="manger\ckfinder\help\fi\files\011.html" />
+    <Content Include="manger\ckfinder\help\fi\files\012.html" />
+    <Content Include="manger\ckfinder\help\fi\files\013.html" />
+    <Content Include="manger\ckfinder\help\fi\files\header.html" />
+    <Content Include="manger\ckfinder\help\fi\files\images\001.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\002.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\003.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\004.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\005.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\006.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\007.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\008.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\009.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\010.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\011.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\012.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\013.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\014.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\015.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\016.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\017.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\018.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\019.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\images\020.gif" />
+    <Content Include="manger\ckfinder\help\fi\files\license.html" />
+    <Content Include="manger\ckfinder\help\fi\files\suggestions.html" />
+    <Content Include="manger\ckfinder\help\fi\files\toc.html" />
+    <Content Include="manger\ckfinder\help\fi\index.html" />
+    <Content Include="manger\ckfinder\help\lt\files\001.html" />
+    <Content Include="manger\ckfinder\help\lt\files\002.html" />
+    <Content Include="manger\ckfinder\help\lt\files\003.html" />
+    <Content Include="manger\ckfinder\help\lt\files\004.html" />
+    <Content Include="manger\ckfinder\help\lt\files\005.html" />
+    <Content Include="manger\ckfinder\help\lt\files\006.html" />
+    <Content Include="manger\ckfinder\help\lt\files\007.html" />
+    <Content Include="manger\ckfinder\help\lt\files\008.html" />
+    <Content Include="manger\ckfinder\help\lt\files\009.html" />
+    <Content Include="manger\ckfinder\help\lt\files\010.html" />
+    <Content Include="manger\ckfinder\help\lt\files\011.html" />
+    <Content Include="manger\ckfinder\help\lt\files\012.html" />
+    <Content Include="manger\ckfinder\help\lt\files\013.html" />
+    <Content Include="manger\ckfinder\help\lt\files\header.html" />
+    <Content Include="manger\ckfinder\help\lt\files\images\001.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\002.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\003.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\004.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\005.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\006.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\007.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\008.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\009.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\010.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\011.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\012.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\013.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\014.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\015.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\016.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\017.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\018.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\019.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\images\020.gif" />
+    <Content Include="manger\ckfinder\help\lt\files\license.html" />
+    <Content Include="manger\ckfinder\help\lt\files\suggestions.html" />
+    <Content Include="manger\ckfinder\help\lt\files\toc.html" />
+    <Content Include="manger\ckfinder\help\lt\index.html" />
+    <Content Include="manger\ckfinder\help\pl\files\001.html" />
+    <Content Include="manger\ckfinder\help\pl\files\002.html" />
+    <Content Include="manger\ckfinder\help\pl\files\003.html" />
+    <Content Include="manger\ckfinder\help\pl\files\004.html" />
+    <Content Include="manger\ckfinder\help\pl\files\005.html" />
+    <Content Include="manger\ckfinder\help\pl\files\006.html" />
+    <Content Include="manger\ckfinder\help\pl\files\007.html" />
+    <Content Include="manger\ckfinder\help\pl\files\008.html" />
+    <Content Include="manger\ckfinder\help\pl\files\009.html" />
+    <Content Include="manger\ckfinder\help\pl\files\010.html" />
+    <Content Include="manger\ckfinder\help\pl\files\011.html" />
+    <Content Include="manger\ckfinder\help\pl\files\012.html" />
+    <Content Include="manger\ckfinder\help\pl\files\013.html" />
+    <Content Include="manger\ckfinder\help\pl\files\014.html" />
+    <Content Include="manger\ckfinder\help\pl\files\015.html" />
+    <Content Include="manger\ckfinder\help\pl\files\header.html" />
+    <Content Include="manger\ckfinder\help\pl\files\license.html" />
+    <Content Include="manger\ckfinder\help\pl\files\suggestions.html" />
+    <Content Include="manger\ckfinder\help\pl\files\toc.html" />
+    <Content Include="manger\ckfinder\help\pl\index.html" />
+    <Content Include="manger\ckfinder\install.txt" />
+    <Content Include="manger\ckfinder\lang\bg.js" />
+    <Content Include="manger\ckfinder\lang\ca.js" />
+    <Content Include="manger\ckfinder\lang\cs.js" />
+    <Content Include="manger\ckfinder\lang\cy.js" />
+    <Content Include="manger\ckfinder\lang\da.js" />
+    <Content Include="manger\ckfinder\lang\de.js" />
+    <Content Include="manger\ckfinder\lang\el.js" />
+    <Content Include="manger\ckfinder\lang\en.js" />
+    <Content Include="manger\ckfinder\lang\eo.js" />
+    <Content Include="manger\ckfinder\lang\es-mx.js" />
+    <Content Include="manger\ckfinder\lang\es.js" />
+    <Content Include="manger\ckfinder\lang\et.js" />
+    <Content Include="manger\ckfinder\lang\fa.js" />
+    <Content Include="manger\ckfinder\lang\fi.js" />
+    <Content Include="manger\ckfinder\lang\fr.js" />
+    <Content Include="manger\ckfinder\lang\gu.js" />
+    <Content Include="manger\ckfinder\lang\he.js" />
+    <Content Include="manger\ckfinder\lang\hi.js" />
+    <Content Include="manger\ckfinder\lang\hr.js" />
+    <Content Include="manger\ckfinder\lang\hu.js" />
+    <Content Include="manger\ckfinder\lang\it.js" />
+    <Content Include="manger\ckfinder\lang\ja.js" />
+    <Content Include="manger\ckfinder\lang\lt.js" />
+    <Content Include="manger\ckfinder\lang\lv.js" />
+    <Content Include="manger\ckfinder\lang\nb.js" />
+    <Content Include="manger\ckfinder\lang\nl.js" />
+    <Content Include="manger\ckfinder\lang\nn.js" />
+    <Content Include="manger\ckfinder\lang\no.js" />
+    <Content Include="manger\ckfinder\lang\pl.js" />
+    <Content Include="manger\ckfinder\lang\pt-br.js" />
+    <Content Include="manger\ckfinder\lang\ro.js" />
+    <Content Include="manger\ckfinder\lang\ru.js" />
+    <Content Include="manger\ckfinder\lang\sk.js" />
+    <Content Include="manger\ckfinder\lang\sl.js" />
+    <Content Include="manger\ckfinder\lang\sr.js" />
+    <Content Include="manger\ckfinder\lang\sv.js" />
+    <Content Include="manger\ckfinder\lang\tr.js" />
+    <Content Include="manger\ckfinder\lang\vi.js" />
+    <Content Include="manger\ckfinder\lang\zh-cn.js" />
+    <Content Include="manger\ckfinder\lang\zh-tw.js" />
+    <Content Include="manger\ckfinder\lang\_translationstatus.txt" />
+    <Content Include="manger\ckfinder\license.txt" />
+    <Content Include="manger\ckfinder\plugins\dummy\lang\en.js" />
+    <Content Include="manger\ckfinder\plugins\dummy\lang\pl.js" />
+    <Content Include="manger\ckfinder\plugins\dummy\plugin.js" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\bin\Debug\CKFinder_FileEditor.dll" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\bin\Debug\CKFinder_FileEditor.pdb" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\bin\Release\CKFinder_FileEditor.dll" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\bin\Release\CKFinder_FileEditor.pdb" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\codemirror\lib\codemirror.css" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\codemirror\lib\codemirror.js" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\clike\clike.js" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\css\css.js" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\javascript\javascript.js" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\xml\xml.js" />
+    <Content Include="manger\ckfinder\plugins\fileeditor\plugin.js" />
+    <Content Include="manger\ckfinder\plugins\flashupload\flash\Uploader.swf" />
+    <Content Include="manger\ckfinder\plugins\flashupload\Uploader.html" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\colorbox.css" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\border.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\controls.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\ie6\borderBottomCenter.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\ie6\borderBottomLeft.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\ie6\borderBottomRight.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\ie6\borderMiddleLeft.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\ie6\borderMiddleRight.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\ie6\borderTopCenter.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\ie6\borderTopLeft.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\ie6\borderTopRight.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\loading.gif" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\loading_background.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\images\overlay.png" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\jquery.colorbox-min.js" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\jquery.min.js" />
+    <Content Include="manger\ckfinder\plugins\gallery\colorbox\license.txt" />
+    <Content Include="manger\ckfinder\plugins\imageresize\bin\Debug\CKFinder_ImageResize.dll" />
+    <Content Include="manger\ckfinder\plugins\imageresize\bin\Debug\CKFinder_ImageResize.pdb" />
+    <Content Include="manger\ckfinder\plugins\imageresize\bin\Release\CKFinder_ImageResize.dll" />
+    <Content Include="manger\ckfinder\plugins\imageresize\bin\Release\CKFinder_ImageResize.pdb" />
+    <Content Include="manger\ckfinder\plugins\imageresize\images\mini.gif" />
+    <Content Include="manger\ckfinder\plugins\imageresize\plugin.js" />
+    <Content Include="manger\ckfinder\plugins\watermark\bin\Debug\CKFinder_Watermark.dll" />
+    <Content Include="manger\ckfinder\plugins\watermark\bin\Debug\CKFinder_Watermark.pdb" />
+    <Content Include="manger\ckfinder\plugins\watermark\bin\Release\CKFinder_Watermark.dll" />
+    <Content Include="manger\ckfinder\plugins\watermark\bin\Release\CKFinder_Watermark.pdb" />
+    <Content Include="manger\ckfinder\plugins\watermark\logo.gif" />
+    <Content Include="manger\ckfinder\skins\kama\app.css" />
+    <Content Include="manger\ckfinder\skins\kama\host.css" />
+    <Content Include="manger\ckfinder\skins\kama\images\ckffolder.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\ckffolderopened.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\ckfminus.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\ckfnothumb.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\ckfplus.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons.png" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\ai.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\avi.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\bmp.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\cs.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\default.icon.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\dll.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\doc.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\docx.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\exe.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\fla.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\gif.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\jpg.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\js.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\mdb.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\mp3.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\ogg.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\pdf.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\ppt.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\pptx.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\rdp.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\swf.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\swt.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\txt.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\vsd.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\xls.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\xlsx.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\xml.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\16\zip.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\ai.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\avi.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\bmp.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\cs.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\default.icon.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\dll.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\doc.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\docx.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\exe.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\fla.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\gif.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\jpg.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\js.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\mdb.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\mp3.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\ogg.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\ogg.png" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\pdf.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\ppt.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\pptx.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\rdp.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\swf.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\swt.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\txt.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\vsd.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\xls.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\xlsx.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\xml.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\icons\32\zip.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\loaders\16x16.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\loaders\32x32.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\spacer.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\sprites.png" />
+    <Content Include="manger\ckfinder\skins\kama\images\sprites_ie6.png" />
+    <Content Include="manger\ckfinder\skins\kama\images\toolbar\add.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\toolbar\clear_basket.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\toolbar\delete.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\toolbar\download.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\toolbar\help.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\toolbar\maximize.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\toolbar\refresh.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\toolbar\settings.gif" />
+    <Content Include="manger\ckfinder\skins\kama\images\toolbar\view.gif" />
+    <Content Include="manger\ckfinder\skins\kama\richcombo.css" />
+    <Content Include="manger\ckfinder\skins\kama\skin.js" />
+    <Content Include="manger\ckfinder\skins\kama\uipanel.css" />
+    <Content Include="manger\ckfinder\skins\v1\app.css" />
+    <Content Include="manger\ckfinder\skins\v1\host.css" />
+    <Content Include="manger\ckfinder\skins\v1\images\ckffolder.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\ckffolderopened.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\ckfminus.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\ckfnothumb.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\ckfplus.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\dialog_sides.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\dialog_sides.png" />
+    <Content Include="manger\ckfinder\skins\v1\images\dialog_sides_rtl.png" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons.png" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\ai.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\avi.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\bmp.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\cs.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\default.icon.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\dll.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\doc.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\docx.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\exe.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\fla.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\gif.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\jpg.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\js.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\mdb.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\mp3.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\pdf.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\ppt.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\pptx.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\rdp.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\swf.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\swt.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\txt.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\vsd.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\xls.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\xlsx.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\xml.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\16\zip.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\ai.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\avi.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\bmp.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\cs.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\default.icon.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\dll.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\doc.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\docx.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\exe.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\fla.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\gif.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\jpg.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\js.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\mdb.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\mp3.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\pdf.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\ppt.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\pptx.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\rdp.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\swf.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\swt.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\txt.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\vsd.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\xls.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\xlsx.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\xml.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\icons\32\zip.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\loaders\16x16.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\loaders\32x32.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\spacer.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\sprites.png" />
+    <Content Include="manger\ckfinder\skins\v1\images\sprites_ie6.png" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar\add.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar\clear_basket.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar\delete.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar\download.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar\help.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar\maximize.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar\refresh.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar\settings.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar\view.gif" />
+    <Content Include="manger\ckfinder\skins\v1\images\toolbar_start.gif" />
+    <Content Include="manger\ckfinder\skins\v1\richcombo.css" />
+    <Content Include="manger\ckfinder\skins\v1\skin.js" />
+    <Content Include="manger\ckfinder\skins\v1\uipanel.css" />
+    <Content Include="manger\ckfinder\translations.txt" />
+    <Content Include="manger\ckfinder\userfiles\images\1.png" />
+    <Content Include="manger\ckfinder\userfiles\images\index_banner1[2].jpg" />
+    <Content Include="manger\ckfinder\userfiles\images\index_banner2[2].jpg" />
+    <Content Include="manger\ckfinder\userfiles\images\index_banner4[2].jpg" />
+    <Content Include="manger\ckfinder\userfiles\images\index_banner6[1].jpg" />
+    <Content Include="manger\ckfinder\userfiles\images\login_01%281%29.jpg" />
+    <Content Include="manger\ckfinder\userfiles\images\login_01%282%29.jpg" />
+    <Content Include="manger\ckfinder\userfiles\images\login_01.jpg" />
+    <Content Include="manger\ckfinder\userfiles\images\QK%29H%24~}CZ_M`RKQM~O1BZRQ.png" />
+    <Content Include="manger\ckfinder\userfiles\images\submit.jpg" />
+    <Content Include="manger\Login.png" />
+    <Content Include="manger\Main.html" />
+    <Content Include="manger\Redister_User.aspx" />
+    <Content Include="manger\Solution\AddSolution.aspx" />
+    <Content Include="manger\Solution\SolutionList.aspx" />
+    <Content Include="manger\Success\AddSuccessCase.aspx" />
+    <Content Include="manger\Success\ListSuccessCase.aspx" />
+    <Content Include="manger\User_Management\Audit.aspx" />
+    <Content Include="manger\User_Management\Edit_User.aspx" />
+    <Content Include="manger\left.aspx" />
+    <Content Include="manger\Login.aspx" />
+    <Content Include="manger\News\AddNews.aspx" />
+    <Content Include="manger\ckeditor\adapters\jquery.js" />
+    <Content Include="manger\ckeditor\build-config.js" />
+    <Content Include="manger\ckeditor\ckeditor.js" />
+    <Content Include="manger\ckeditor\config.js" />
+    <Content Include="manger\ckeditor\contents.css" />
+    <Content Include="manger\ckeditor\lang\af.js" />
+    <Content Include="manger\ckeditor\lang\ar.js" />
+    <Content Include="manger\ckeditor\lang\bg.js" />
+    <Content Include="manger\ckeditor\lang\bn.js" />
+    <Content Include="manger\ckeditor\lang\bs.js" />
+    <Content Include="manger\ckeditor\lang\ca.js" />
+    <Content Include="manger\ckeditor\lang\cs.js" />
+    <Content Include="manger\ckeditor\lang\cy.js" />
+    <Content Include="manger\ckeditor\lang\da.js" />
+    <Content Include="manger\ckeditor\lang\de-ch.js" />
+    <Content Include="manger\ckeditor\lang\de.js" />
+    <Content Include="manger\ckeditor\lang\el.js" />
+    <Content Include="manger\ckeditor\lang\en-au.js" />
+    <Content Include="manger\ckeditor\lang\en-ca.js" />
+    <Content Include="manger\ckeditor\lang\en-gb.js" />
+    <Content Include="manger\ckeditor\lang\en.js" />
+    <Content Include="manger\ckeditor\lang\eo.js" />
+    <Content Include="manger\ckeditor\lang\es.js" />
+    <Content Include="manger\ckeditor\lang\et.js" />
+    <Content Include="manger\ckeditor\lang\eu.js" />
+    <Content Include="manger\ckeditor\lang\fa.js" />
+    <Content Include="manger\ckeditor\lang\fi.js" />
+    <Content Include="manger\ckeditor\lang\fo.js" />
+    <Content Include="manger\ckeditor\lang\fr-ca.js" />
+    <Content Include="manger\ckeditor\lang\fr.js" />
+    <Content Include="manger\ckeditor\lang\gl.js" />
+    <Content Include="manger\ckeditor\lang\gu.js" />
+    <Content Include="manger\ckeditor\lang\he.js" />
+    <Content Include="manger\ckeditor\lang\hi.js" />
+    <Content Include="manger\ckeditor\lang\hr.js" />
+    <Content Include="manger\ckeditor\lang\hu.js" />
+    <Content Include="manger\ckeditor\lang\id.js" />
+    <Content Include="manger\ckeditor\lang\is.js" />
+    <Content Include="manger\ckeditor\lang\it.js" />
+    <Content Include="manger\ckeditor\lang\ja.js" />
+    <Content Include="manger\ckeditor\lang\ka.js" />
+    <Content Include="manger\ckeditor\lang\km.js" />
+    <Content Include="manger\ckeditor\lang\ko.js" />
+    <Content Include="manger\ckeditor\lang\ku.js" />
+    <Content Include="manger\ckeditor\lang\lt.js" />
+    <Content Include="manger\ckeditor\lang\lv.js" />
+    <Content Include="manger\ckeditor\lang\mk.js" />
+    <Content Include="manger\ckeditor\lang\mn.js" />
+    <Content Include="manger\ckeditor\lang\ms.js" />
+    <Content Include="manger\ckeditor\lang\nb.js" />
+    <Content Include="manger\ckeditor\lang\nl.js" />
+    <Content Include="manger\ckeditor\lang\no.js" />
+    <Content Include="manger\ckeditor\lang\pl.js" />
+    <Content Include="manger\ckeditor\lang\pt-br.js" />
+    <Content Include="manger\ckeditor\lang\pt.js" />
+    <Content Include="manger\ckeditor\lang\ro.js" />
+    <Content Include="manger\ckeditor\lang\ru.js" />
+    <Content Include="manger\ckeditor\lang\si.js" />
+    <Content Include="manger\ckeditor\lang\sk.js" />
+    <Content Include="manger\ckeditor\lang\sl.js" />
+    <Content Include="manger\ckeditor\lang\sq.js" />
+    <Content Include="manger\ckeditor\lang\sr-latn.js" />
+    <Content Include="manger\ckeditor\lang\sr.js" />
+    <Content Include="manger\ckeditor\lang\sv.js" />
+    <Content Include="manger\ckeditor\lang\th.js" />
+    <Content Include="manger\ckeditor\lang\tr.js" />
+    <Content Include="manger\ckeditor\lang\tt.js" />
+    <Content Include="manger\ckeditor\lang\ug.js" />
+    <Content Include="manger\ckeditor\lang\uk.js" />
+    <Content Include="manger\ckeditor\lang\vi.js" />
+    <Content Include="manger\ckeditor\lang\zh-cn.js" />
+    <Content Include="manger\ckeditor\lang\zh.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="manger\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="manger\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="manger\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="manger\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="manger\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="manger\ckeditor\plugins\colordialog\dialogs\colordialog.css" />
+    <Content Include="manger\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="manger\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="manger\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="manger\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="manger\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="manger\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="manger\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="manger\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="manger\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="manger\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="manger\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="manger\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="manger\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="manger\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="manger\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="manger\ckeditor\plugins\icons.png" />
+    <Content Include="manger\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="manger\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="manger\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="manger\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="manger\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="manger\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="manger\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="manger\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="manger\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="manger\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="manger\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="manger\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="manger\ckeditor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="manger\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="manger\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="manger\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="manger\ckeditor\plugins\preview\preview.html" />
+    <Content Include="manger\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="manger\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="manger\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\angel_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\angry_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\broken_heart.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\confused_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\cry_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\devil_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\embarrassed_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\envelope.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\heart.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\kiss.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\lightbulb.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\omg_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\regular_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\sad_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\shades_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\teeth_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\thumbs_down.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\thumbs_up.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\tongue_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.png" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="manger\ckeditor\plugins\smiley\images\wink_smile.png" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\eu.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="manger\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="manger\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="manger\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="manger\ckeditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="manger\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="manger\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="manger\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="manger\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="manger\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="manger\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="manger\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="manger\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="manger\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="manger\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="manger\ckeditor\samples\css\samples.css" />
+    <Content Include="manger\ckeditor\samples\img\github-top.png" />
+    <Content Include="manger\ckeditor\samples\img\header-bg.png" />
+    <Content Include="manger\ckeditor\samples\img\header-separator.png" />
+    <Content Include="manger\ckeditor\samples\img\logo.png" />
+    <Content Include="manger\ckeditor\samples\img\navigation-tip.png" />
+    <Content Include="manger\ckeditor\samples\index.html" />
+    <Content Include="manger\ckeditor\samples\js\sample.js" />
+    <Content Include="manger\ckeditor\samples\js\sf.js" />
+    <Content Include="manger\ckeditor\samples\old\ajax.html" />
+    <Content Include="manger\ckeditor\samples\old\api.html" />
+    <Content Include="manger\ckeditor\samples\old\appendto.html" />
+    <Content Include="manger\ckeditor\samples\old\assets\inlineall\logo.png" />
+    <Content Include="manger\ckeditor\samples\old\assets\outputxhtml\outputxhtml.css" />
+    <Content Include="manger\ckeditor\samples\old\assets\sample.jpg" />
+    <Content Include="manger\ckeditor\samples\old\assets\uilanguages\languages.js" />
+    <Content Include="manger\ckeditor\samples\old\datafiltering.html" />
+    <Content Include="manger\ckeditor\samples\old\dialog\assets\my_dialog.js" />
+    <Content Include="manger\ckeditor\samples\old\dialog\dialog.html" />
+    <Content Include="manger\ckeditor\samples\old\divreplace.html" />
+    <Content Include="manger\ckeditor\samples\old\enterkey\enterkey.html" />
+    <Content Include="manger\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.swf" />
+    <Content Include="manger\ckeditor\samples\old\htmlwriter\assets\outputforflash\swfobject.js" />
+    <Content Include="manger\ckeditor\samples\old\htmlwriter\outputforflash.html" />
+    <Content Include="manger\ckeditor\samples\old\htmlwriter\outputhtml.html" />
+    <Content Include="manger\ckeditor\samples\old\index.html" />
+    <Content Include="manger\ckeditor\samples\old\inlineall.html" />
+    <Content Include="manger\ckeditor\samples\old\inlinebycode.html" />
+    <Content Include="manger\ckeditor\samples\old\inlinetextarea.html" />
+    <Content Include="manger\ckeditor\samples\old\jquery.html" />
+    <Content Include="manger\ckeditor\samples\old\magicline\magicline.html" />
+    <Content Include="manger\ckeditor\samples\old\readonly.html" />
+    <Content Include="manger\ckeditor\samples\old\replacebyclass.html" />
+    <Content Include="manger\ckeditor\samples\old\replacebycode.html" />
+    <Content Include="manger\ckeditor\samples\old\sample.css" />
+    <Content Include="manger\ckeditor\samples\old\sample.js" />
+    <Content Include="manger\ckeditor\samples\old\tabindex.html" />
+    <Content Include="manger\ckeditor\samples\old\toolbar\toolbar.html" />
+    <Content Include="manger\ckeditor\samples\old\uicolor.html" />
+    <Content Include="manger\ckeditor\samples\old\uilanguages.html" />
+    <Content Include="manger\ckeditor\samples\old\wysiwygarea\fullpage.html" />
+    <Content Include="manger\ckeditor\samples\old\xhtmlstyle.html" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\css\fontello.css" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\font\LICENSE.txt" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\index.html" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.css" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\lib\codemirror\neo.css" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.css" />
+    <Content Include="manger\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" />
+    <Content Include="manger\ckeditor\skins\moono\dialog.css" />
+    <Content Include="manger\ckeditor\skins\moono\dialog_ie.css" />
+    <Content Include="manger\ckeditor\skins\moono\dialog_ie7.css" />
+    <Content Include="manger\ckeditor\skins\moono\dialog_ie8.css" />
+    <Content Include="manger\ckeditor\skins\moono\dialog_iequirks.css" />
+    <Content Include="manger\ckeditor\skins\moono\editor.css" />
+    <Content Include="manger\ckeditor\skins\moono\editor_gecko.css" />
+    <Content Include="manger\ckeditor\skins\moono\editor_ie.css" />
+    <Content Include="manger\ckeditor\skins\moono\editor_ie7.css" />
+    <Content Include="manger\ckeditor\skins\moono\editor_ie8.css" />
+    <Content Include="manger\ckeditor\skins\moono\editor_iequirks.css" />
+    <Content Include="manger\ckeditor\skins\moono\icons.png" />
+    <Content Include="manger\ckeditor\skins\moono\icons_hidpi.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\arrow.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\close.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\hidpi\close.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\hidpi\lock-open.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\hidpi\lock.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\hidpi\refresh.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\lock-open.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\lock.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\refresh.png" />
+    <Content Include="manger\ckeditor\skins\moono\images\spinner.gif" />
+    <Content Include="manger\ckeditor\styles.js" />
+    <Content Include="manger\News\SetNews.aspx" />
+    <Content Include="manger\top.html" />
+    <Content Include="manger\TYNFrameset.html" />
+    <Content Include="manger\User_Management\Register_management.aspx" />
+    <Content Include="manger\后台.jpg" />
+    <Content Include="User\About_us\aboutus.aspx" />
+    <Content Include="User\About_us\Assets\css\reset.css" />
+    <Content Include="User\About_us\Assets\css\thems.css" />
+    <Content Include="User\About_us\Assets\images\bg_1.jpg" />
+    <Content Include="User\About_us\Assets\images\icon1.png" />
+    <Content Include="User\About_us\Assets\images\icon10.png" />
+    <Content Include="User\About_us\Assets\images\icon2.png" />
+    <Content Include="User\About_us\Assets\images\icon3.png" />
+    <Content Include="User\About_us\Assets\images\icon4.png" />
+    <Content Include="User\About_us\Assets\images\icon5.jpg" />
+    <Content Include="User\About_us\Assets\images\icon6.png" />
+    <Content Include="User\About_us\Assets\images\icon7.png" />
+    <Content Include="User\About_us\Assets\images\icon8.png" />
+    <Content Include="User\About_us\Assets\images\icon9.png" />
+    <Content Include="User\About_us\Assets\images\line.jpg" />
+    <Content Include="User\About_us\Assets\images\logo.png" />
+    <Content Include="User\About_us\Assets\images\pic1.png" />
+    <Content Include="User\About_us\Assets\images\pic2.png" />
+    <Content Include="User\About_us\Assets\images\pic3.png" />
+    <Content Include="User\About_us\Assets\images\pic4.png" />
+    <Content Include="User\About_us\Assets\images\pic5.jpg" />
+    <Content Include="User\About_us\Assets\images\pic6.jpg" />
+    <Content Include="User\About_us\Assets\images\pic7.jpg" />
+    <Content Include="User\About_us\Assets\images\pic8.jpg" />
+    <Content Include="User\About_us\Assets\js\banner.js" />
+    <Content Include="User\About_us\Assets\js\jquery-1.8.3.min.js" />
+    <Content Include="User\About_us\Assets\js\js_z.js" />
+    <Content Include="User\About_us\Assets\plugins\FlexSlider\flexslider.css" />
+    <Content Include="User\About_us\Assets\plugins\FlexSlider\images\banner.jpg" />
+    <Content Include="User\About_us\Assets\plugins\FlexSlider\images\nav_ico.png" />
+    <Content Include="User\About_us\Assets\plugins\FlexSlider\index.html" />
+    <Content Include="User\About_us\Assets\plugins\FlexSlider\jquery-1.9.1.min.js" />
+    <Content Include="User\About_us\Assets\plugins\FlexSlider\jquery.flexslider-min.js" />
+    <Content Include="User\About_us\Assets\plugins\FlexSlider\jquery.flexslider.js" />
+    <Content Include="User\About_us\Assets\upload\banner.jpg" />
+    <Content Include="User\About_us\Assets\upload\banner_a.jpg" />
+    <Content Include="User\About_us\Assets\upload\code.jpg" />
+    <Content Include="User\About_us\Assets\upload\map.jpg" />
+    <Content Include="User\About_us\Assets\upload\pic1.jpg" />
+    <Content Include="User\About_us\Assets\upload\pic2.jpg" />
+    <Content Include="User\About_us\Assets\upload\pic3.jpg" />
+    <Content Include="User\About_us\Assets\upload\pic4.jpg" />
+    <Content Include="User\About_us\Assets\upload\pic5.jpg" />
+    <Content Include="User\About_us\Assets\upload\pic6.jpg" />
+    <Content Include="User\About_us\Assets\upload\pic7.jpg" />
+    <Content Include="User\About_us\Assets\upload\pic8.jpg" />
+    <Content Include="User\About_us\Assets\upload\pic9.jpg" />
+    <Content Include="User\Assets\upload\banner.jpg" />
+    <Content Include="User\Assets\css\reset.css" />
+    <Content Include="User\Assets\css\thems.css" />
+    <Content Include="User\Assets\images\bg_1.jpg" />
+    <Content Include="User\Assets\images\icon1.png" />
+    <Content Include="User\Assets\images\icon10.png" />
+    <Content Include="User\Assets\images\icon2.png" />
+    <Content Include="User\Assets\images\icon3.png" />
+    <Content Include="User\Assets\images\icon4.png" />
+    <Content Include="User\Assets\images\icon5.jpg" />
+    <Content Include="User\Assets\images\icon6.png" />
+    <Content Include="User\Assets\images\icon7.png" />
+    <Content Include="User\Assets\images\icon8.png" />
+    <Content Include="User\Assets\images\icon9.png" />
+    <Content Include="User\Assets\images\line.jpg" />
+    <Content Include="User\Assets\images\logo.png" />
+    <Content Include="User\Assets\images\pic1.png" />
+    <Content Include="User\Assets\images\pic2.png" />
+    <Content Include="User\Assets\images\pic3.png" />
+    <Content Include="User\Assets\images\pic4.png" />
+    <Content Include="User\Assets\images\pic5.jpg" />
+    <Content Include="User\Assets\images\pic6.jpg" />
+    <Content Include="User\Assets\images\pic7.jpg" />
+    <Content Include="User\Assets\images\pic8.jpg" />
+    <Content Include="User\Assets\js\banner.js" />
+    <Content Include="User\Assets\js\jquery-1.8.3.min.js" />
+    <Content Include="User\Assets\js\js_z.js" />
+    <Content Include="User\Assets\plugins\FlexSlider\flexslider.css" />
+    <Content Include="User\Assets\plugins\FlexSlider\images\banner.jpg" />
+    <Content Include="User\Assets\plugins\FlexSlider\images\nav_ico.png" />
+    <Content Include="User\Assets\plugins\FlexSlider\index.html" />
+    <Content Include="User\Assets\plugins\FlexSlider\jquery-1.9.1.min.js" />
+    <Content Include="User\Assets\plugins\FlexSlider\jquery.flexslider-min.js" />
+    <Content Include="User\Assets\plugins\FlexSlider\jquery.flexslider.js" />
+    <Content Include="User\Assets\upload\banner_a.jpg" />
+    <Content Include="User\Assets\upload\code.jpg" />
+    <Content Include="User\Assets\upload\map.jpg" />
+    <Content Include="User\Assets\upload\pic1.jpg" />
+    <Content Include="User\Assets\upload\pic2.jpg" />
+    <Content Include="User\Assets\upload\pic3.jpg" />
+    <Content Include="User\Assets\upload\pic4.jpg" />
+    <Content Include="User\Assets\upload\pic5.jpg" />
+    <Content Include="User\Assets\upload\pic6.jpg" />
+    <Content Include="User\Assets\upload\pic7.jpg" />
+    <Content Include="User\Assets\upload\pic8.jpg" />
+    <Content Include="User\Assets\upload\pic9.jpg" />
+    <Content Include="User\HomeTop.htm" />
+    <Content Include="User\News\Assets\images\logo.png" />
+    <Content Include="User\News\Assets\upload\banner_a.jpg" />
+    <Content Include="User\News\Assets\css\reset.css" />
+    <Content Include="User\News\Assets\css\thems.css" />
+    <Content Include="User\News\Assets\images\bg_1.jpg" />
+    <Content Include="User\News\Assets\images\icon1.png" />
+    <Content Include="User\News\Assets\images\icon10.png" />
+    <Content Include="User\News\Assets\images\icon2.png" />
+    <Content Include="User\News\Assets\images\icon3.png" />
+    <Content Include="User\News\Assets\images\icon4.png" />
+    <Content Include="User\News\Assets\images\icon5.jpg" />
+    <Content Include="User\News\Assets\images\icon6.png" />
+    <Content Include="User\News\Assets\images\icon7.png" />
+    <Content Include="User\News\Assets\images\icon8.png" />
+    <Content Include="User\News\Assets\images\icon9.png" />
+    <Content Include="User\News\Assets\images\line.jpg" />
+    <Content Include="User\News\Assets\images\pic1.png" />
+    <Content Include="User\News\Assets\images\pic2.png" />
+    <Content Include="User\News\Assets\images\pic3.png" />
+    <Content Include="User\News\Assets\images\pic4.png" />
+    <Content Include="User\News\Assets\images\pic5.jpg" />
+    <Content Include="User\News\Assets\images\pic6.jpg" />
+    <Content Include="User\News\Assets\images\pic7.jpg" />
+    <Content Include="User\News\Assets\images\pic8.jpg" />
+    <Content Include="User\News\Assets\js\banner.js" />
+    <Content Include="User\News\Assets\js\jquery-1.8.3.min.js" />
+    <Content Include="User\News\Assets\js\js_z.js" />
+    <Content Include="User\News\Assets\plugins\FlexSlider\flexslider.css" />
+    <Content Include="User\News\Assets\plugins\FlexSlider\images\banner.jpg" />
+    <Content Include="User\News\Assets\plugins\FlexSlider\images\nav_ico.png" />
+    <Content Include="User\News\Assets\plugins\FlexSlider\index.html" />
+    <Content Include="User\News\Assets\plugins\FlexSlider\jquery-1.9.1.min.js" />
+    <Content Include="User\News\Assets\plugins\FlexSlider\jquery.flexslider-min.js" />
+    <Content Include="User\News\Assets\plugins\FlexSlider\jquery.flexslider.js" />
+    <Content Include="User\News\Assets\upload\banner.jpg" />
+    <Content Include="User\News\Assets\upload\code.jpg" />
+    <Content Include="User\News\Assets\upload\map.jpg" />
+    <Content Include="User\News\Assets\upload\pic1.jpg" />
+    <Content Include="User\News\Assets\upload\pic2.jpg" />
+    <Content Include="User\News\Assets\upload\pic3.jpg" />
+    <Content Include="User\News\Assets\upload\pic4.jpg" />
+    <Content Include="User\News\Assets\upload\pic5.jpg" />
+    <Content Include="User\News\Assets\upload\pic6.jpg" />
+    <Content Include="User\News\Assets\upload\pic7.jpg" />
+    <Content Include="User\News\Assets\upload\pic8.jpg" />
+    <Content Include="User\News\Assets\upload\pic9.jpg" />
+    <Content Include="User\News\NewsItem.aspx" />
+    <Content Include="User\News\NewsList.aspx" />
+    <Content Include="User\Bottom.html" />
+    <Content Include="User\Solution\Assets\css\reset.css" />
+    <Content Include="User\Solution\Assets\css\thems.css" />
+    <Content Include="User\Solution\Assets\images\bg_1.jpg" />
+    <Content Include="User\Solution\Assets\images\icon1.png" />
+    <Content Include="User\Solution\Assets\images\icon10.png" />
+    <Content Include="User\Solution\Assets\images\icon2.png" />
+    <Content Include="User\Solution\Assets\images\icon3.png" />
+    <Content Include="User\Solution\Assets\images\icon4.png" />
+    <Content Include="User\Solution\Assets\images\icon5.jpg" />
+    <Content Include="User\Solution\Assets\images\icon6.png" />
+    <Content Include="User\Solution\Assets\images\icon7.png" />
+    <Content Include="User\Solution\Assets\images\icon8.png" />
+    <Content Include="User\Solution\Assets\images\icon9.png" />
+    <Content Include="User\Solution\Assets\images\line.jpg" />
+    <Content Include="User\Solution\Assets\images\logo.png" />
+    <Content Include="User\Solution\Assets\images\pic1.png" />
+    <Content Include="User\Solution\Assets\images\pic2.png" />
+    <Content Include="User\Solution\Assets\images\pic3.png" />
+    <Content Include="User\Solution\Assets\images\pic4.png" />
+    <Content Include="User\Solution\Assets\images\pic5.jpg" />
+    <Content Include="User\Solution\Assets\images\pic6.jpg" />
+    <Content Include="User\Solution\Assets\images\pic7.jpg" />
+    <Content Include="User\Solution\Assets\images\pic8.jpg" />
+    <Content Include="User\Solution\Assets\js\banner.js" />
+    <Content Include="User\Solution\Assets\js\jquery-1.8.3.min.js" />
+    <Content Include="User\Solution\Assets\js\js_z.js" />
+    <Content Include="User\Solution\Assets\plugins\FlexSlider\flexslider.css" />
+    <Content Include="User\Solution\Assets\plugins\FlexSlider\images\banner.jpg" />
+    <Content Include="User\Solution\Assets\plugins\FlexSlider\images\nav_ico.png" />
+    <Content Include="User\Solution\Assets\plugins\FlexSlider\index.html" />
+    <Content Include="User\Solution\Assets\plugins\FlexSlider\jquery-1.9.1.min.js" />
+    <Content Include="User\Solution\Assets\plugins\FlexSlider\jquery.flexslider-min.js" />
+    <Content Include="User\Solution\Assets\plugins\FlexSlider\jquery.flexslider.js" />
+    <Content Include="User\Solution\Assets\upload\banner.jpg" />
+    <Content Include="User\Solution\Assets\upload\banner_a.jpg" />
+    <Content Include="User\Solution\Assets\upload\code.jpg" />
+    <Content Include="User\Solution\Assets\upload\map.jpg" />
+    <Content Include="User\Solution\Assets\upload\pic1.jpg" />
+    <Content Include="User\Solution\Assets\upload\pic2.jpg" />
+    <Content Include="User\Solution\Assets\upload\pic3.jpg" />
+    <Content Include="User\Solution\Assets\upload\pic4.jpg" />
+    <Content Include="User\Solution\Assets\upload\pic5.jpg" />
+    <Content Include="User\Solution\Assets\upload\pic6.jpg" />
+    <Content Include="User\Solution\Assets\upload\pic7.jpg" />
+    <Content Include="User\Solution\Assets\upload\pic8.jpg" />
+    <Content Include="User\Solution\Assets\upload\pic9.jpg" />
+    <Content Include="User\Solution\SolutionItem.aspx" />
+    <Content Include="User\Solution\SolutionList.aspx" />
+    <Content Include="User\Success\Assets\css\reset.css" />
+    <Content Include="User\Success\Assets\css\thems.css" />
+    <Content Include="User\Success\Assets\images\bg_1.jpg" />
+    <Content Include="User\Success\Assets\images\icon1.png" />
+    <Content Include="User\Success\Assets\images\icon10.png" />
+    <Content Include="User\Success\Assets\images\icon2.png" />
+    <Content Include="User\Success\Assets\images\icon3.png" />
+    <Content Include="User\Success\Assets\images\icon4.png" />
+    <Content Include="User\Success\Assets\images\icon5.jpg" />
+    <Content Include="User\Success\Assets\images\icon6.png" />
+    <Content Include="User\Success\Assets\images\icon7.png" />
+    <Content Include="User\Success\Assets\images\icon8.png" />
+    <Content Include="User\Success\Assets\images\icon9.png" />
+    <Content Include="User\Success\Assets\images\line.jpg" />
+    <Content Include="User\Success\Assets\images\logo.png" />
+    <Content Include="User\Success\Assets\images\pic1.png" />
+    <Content Include="User\Success\Assets\images\pic2.png" />
+    <Content Include="User\Success\Assets\images\pic3.png" />
+    <Content Include="User\Success\Assets\images\pic4.png" />
+    <Content Include="User\Success\Assets\images\pic5.jpg" />
+    <Content Include="User\Success\Assets\images\pic6.jpg" />
+    <Content Include="User\Success\Assets\images\pic7.jpg" />
+    <Content Include="User\Success\Assets\images\pic8.jpg" />
+    <Content Include="User\Success\Assets\js\banner.js" />
+    <Content Include="User\Success\Assets\js\jquery-1.8.3.min.js" />
+    <Content Include="User\Success\Assets\js\js_z.js" />
+    <Content Include="User\Success\Assets\plugins\FlexSlider\flexslider.css" />
+    <Content Include="User\Success\Assets\plugins\FlexSlider\images\banner.jpg" />
+    <Content Include="User\Success\Assets\plugins\FlexSlider\images\nav_ico.png" />
+    <Content Include="User\Success\Assets\plugins\FlexSlider\index.html" />
+    <Content Include="User\Success\Assets\plugins\FlexSlider\jquery-1.9.1.min.js" />
+    <Content Include="User\Success\Assets\plugins\FlexSlider\jquery.flexslider-min.js" />
+    <Content Include="User\Success\Assets\plugins\FlexSlider\jquery.flexslider.js" />
+    <Content Include="User\Success\Assets\upload\banner.jpg" />
+    <Content Include="User\Success\Assets\upload\banner_a.jpg" />
+    <Content Include="User\Success\Assets\upload\code.jpg" />
+    <Content Include="User\Success\Assets\upload\map.jpg" />
+    <Content Include="User\Success\Assets\upload\pic1.jpg" />
+    <Content Include="User\Success\Assets\upload\pic2.jpg" />
+    <Content Include="User\Success\Assets\upload\pic3.jpg" />
+    <Content Include="User\Success\Assets\upload\pic4.jpg" />
+    <Content Include="User\Success\Assets\upload\pic5.jpg" />
+    <Content Include="User\Success\Assets\upload\pic6.jpg" />
+    <Content Include="User\Success\Assets\upload\pic7.jpg" />
+    <Content Include="User\Success\Assets\upload\pic8.jpg" />
+    <Content Include="User\Success\Assets\upload\pic9.jpg" />
+    <Content Include="User\Success\SuccessCaseItem.aspx" />
+    <Content Include="User\Success\SuccessCaseList.aspx" />
+    <Content Include="User\top.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DAO.cs" />
+    <Compile Include="manger\About\EditInfo.aspx.cs">
+      <DependentUpon>EditInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\About\EditInfo.aspx.designer.cs">
+      <DependentUpon>EditInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\left.aspx.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\left.aspx.designer.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\News\AddNews.aspx.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\News\AddNews.aspx.designer.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\News\SetNews.aspx.cs">
+      <DependentUpon>SetNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\News\SetNews.aspx.designer.cs">
+      <DependentUpon>SetNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\Redister_User.aspx.cs">
+      <DependentUpon>Redister_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\Redister_User.aspx.designer.cs">
+      <DependentUpon>Redister_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\Solution\AddSolution.aspx.cs">
+      <DependentUpon>AddSolution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\Solution\AddSolution.aspx.designer.cs">
+      <DependentUpon>AddSolution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\Solution\SolutionList.aspx.cs">
+      <DependentUpon>SolutionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\Solution\SolutionList.aspx.designer.cs">
+      <DependentUpon>SolutionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\Success\AddSuccessCase.aspx.cs">
+      <DependentUpon>AddSuccessCase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\Success\AddSuccessCase.aspx.designer.cs">
+      <DependentUpon>AddSuccessCase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\Success\ListSuccessCase.aspx.cs">
+      <DependentUpon>ListSuccessCase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\Success\ListSuccessCase.aspx.designer.cs">
+      <DependentUpon>ListSuccessCase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\User_Management\Audit.aspx.cs">
+      <DependentUpon>Audit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\User_Management\Audit.aspx.designer.cs">
+      <DependentUpon>Audit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\User_Management\Edit_User.aspx.cs">
+      <DependentUpon>Edit_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\User_Management\Edit_User.aspx.designer.cs">
+      <DependentUpon>Edit_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manger\User_Management\Register_management.aspx.cs">
+      <DependentUpon>Register_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manger\User_Management\Register_management.aspx.designer.cs">
+      <DependentUpon>Register_management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\About_us\aboutus.aspx.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\About_us\aboutus.aspx.designer.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\News\NewsItem.aspx.cs">
+      <DependentUpon>NewsItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\News\NewsItem.aspx.designer.cs">
+      <DependentUpon>NewsItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\News\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\News\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Solution\SolutionItem.aspx.cs">
+      <DependentUpon>SolutionItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Solution\SolutionItem.aspx.designer.cs">
+      <DependentUpon>SolutionItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Solution\SolutionList.aspx.cs">
+      <DependentUpon>SolutionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Solution\SolutionList.aspx.designer.cs">
+      <DependentUpon>SolutionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Success\SuccessCaseItem.aspx.cs">
+      <DependentUpon>SuccessCaseItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Success\SuccessCaseItem.aspx.designer.cs">
+      <DependentUpon>SuccessCaseItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Success\SuccessCaseList.aspx.cs">
+      <DependentUpon>SuccessCaseList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Success\SuccessCaseList.aspx.designer.cs">
+      <DependentUpon>SuccessCaseList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="manger\ckeditor\CHANGES.md" />
+    <None Include="manger\ckeditor\LICENSE.md" />
+    <None Include="manger\ckeditor\plugins\scayt\CHANGELOG.md" />
+    <None Include="manger\ckeditor\plugins\scayt\LICENSE.md" />
+    <None Include="manger\ckeditor\plugins\scayt\README.md" />
+    <None Include="manger\ckeditor\plugins\wsc\LICENSE.md" />
+    <None Include="manger\ckeditor\plugins\wsc\README.md" />
+    <None Include="manger\ckeditor\README.md" />
+    <None Include="manger\ckeditor\samples\old\assets\posteddata.php" />
+    <None Include="manger\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.fla" />
+    <None Include="manger\ckeditor\samples\old\sample_posteddata.php" />
+    <None Include="manger\ckeditor\samples\toolbarconfigurator\font\config.json" />
+    <None Include="manger\ckeditor\samples\toolbarconfigurator\font\fontello.eot" />
+    <None Include="manger\ckeditor\samples\toolbarconfigurator\font\fontello.svg" />
+    <None Include="manger\ckeditor\samples\toolbarconfigurator\font\fontello.ttf" />
+    <None Include="manger\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
+    <None Include="manger\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
+    <None Include="manger\ckeditor\skins\moono\readme.md" />
+    <None Include="manger\ckfinder\bin\Debug\vssver.scc" />
+    <None Include="manger\ckfinder\bin\Release\vssver.scc" />
+    <None Include="manger\ckfinder\core\connector\aspx\lang\vssver.scc" />
+    <None Include="manger\ckfinder\core\connector\aspx\vssver.scc" />
+    <None Include="manger\ckfinder\help\cs\files\vssver.scc" />
+    <None Include="manger\ckfinder\help\cs\vssver.scc" />
+    <None Include="manger\ckfinder\help\en\files\vssver.scc" />
+    <None Include="manger\ckfinder\help\en\vssver.scc" />
+    <None Include="manger\ckfinder\help\es-mx\files\images\vssver.scc" />
+    <None Include="manger\ckfinder\help\es-mx\files\vssver.scc" />
+    <None Include="manger\ckfinder\help\es-mx\vssver.scc" />
+    <None Include="manger\ckfinder\help\es\files\images\vssver.scc" />
+    <None Include="manger\ckfinder\help\es\files\vssver.scc" />
+    <None Include="manger\ckfinder\help\es\vssver.scc" />
+    <None Include="manger\ckfinder\help\files\images\vssver.scc" />
+    <None Include="manger\ckfinder\help\files\other\vssver.scc" />
+    <None Include="manger\ckfinder\help\fi\files\images\vssver.scc" />
+    <None Include="manger\ckfinder\help\fi\files\vssver.scc" />
+    <None Include="manger\ckfinder\help\fi\vssver.scc" />
+    <None Include="manger\ckfinder\help\lt\files\images\vssver.scc" />
+    <None Include="manger\ckfinder\help\lt\files\vssver.scc" />
+    <None Include="manger\ckfinder\help\lt\vssver.scc" />
+    <None Include="manger\ckfinder\help\pl\files\vssver.scc" />
+    <None Include="manger\ckfinder\help\pl\vssver.scc" />
+    <None Include="manger\ckfinder\lang\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\dummy\lang\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\dummy\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\bin\Debug\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\bin\Release\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\codemirror\lib\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
+    <None Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\clike\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\css\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\htmlmixed\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\javascript\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\codemirror\mode\xml\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\codemirror\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\fileeditor\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\flashupload\flash\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\flashupload\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\gallery\colorbox\images\ie6\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\gallery\colorbox\images\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\gallery\colorbox\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\imageresize\bin\Debug\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\imageresize\bin\Release\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\imageresize\images\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\imageresize\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\watermark\bin\Debug\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\watermark\bin\Release\vssver.scc" />
+    <None Include="manger\ckfinder\plugins\watermark\vssver.scc" />
+    <None Include="manger\ckfinder\skins\kama\images\icons\16\vssver.scc" />
+    <None Include="manger\ckfinder\skins\kama\images\icons\32\vssver.scc" />
+    <None Include="manger\ckfinder\skins\kama\images\loaders\vssver.scc" />
+    <None Include="manger\ckfinder\skins\kama\images\toolbar\vssver.scc" />
+    <None Include="manger\ckfinder\skins\kama\images\vssver.scc" />
+    <None Include="manger\ckfinder\skins\kama\vssver.scc" />
+    <None Include="manger\ckfinder\skins\v1\images\icons\16\vssver.scc" />
+    <None Include="manger\ckfinder\skins\v1\images\icons\32\vssver.scc" />
+    <None Include="manger\ckfinder\skins\v1\images\loaders\vssver.scc" />
+    <None Include="manger\ckfinder\skins\v1\images\toolbar\vssver.scc" />
+    <None Include="manger\ckfinder\skins\v1\images\vssver.scc" />
+    <None Include="manger\ckfinder\skins\v1\vssver.scc" />
+    <None Include="manger\ckfinder\userfiles\images\vssver.scc" />
+    <None Include="manger\ckfinder\vssver.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>31954</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
